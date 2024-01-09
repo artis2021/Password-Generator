@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(orange, white, green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px
+    
+}
+
+#container,#output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.138);
+    padding: 30px;
+    border-radius: 10px;
+    border: rgba(255, 255, 255, 0.215) solid 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.122);
+    backdrop-filter: blur(5px);
+}
+
+#numberInput{
+    width: 100%;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 10px 20px ;
+    
+}
+
+#container div{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"]{
+    width: 40px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.179);
+    transition: 0.3s ease all;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+#err{
+    padding: 20px 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#success{
+    padding: 20px 30px;
+    background-color: rgb(13, 143, 13);
+    color: white;
+    border-radius: 10px;
+    font-size: 32px;
+}
